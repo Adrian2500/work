@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Poppins:wght@600&display=swap');
 @import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
@@ -11,7 +12,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
     height: 50px;
     background: #333;
     color: #fff;
-    
+
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +28,7 @@ header {
 }
 
 .negritas{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -55,6 +56,22 @@ section {
     text-align: center;
 }
 
+#reseña1 {
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: #212121;
+    padding:20px;
+}
+
+#reseña2 {
+    height: 80px;
+    text-align: center;
+    background-color: #ffd600;
+    padding:20px;
+
+}
+
 footer .contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -77,11 +94,11 @@ footer .contenedor {
     text-decoration: none;
 }
 
-@media (min-width:768px) { 
+@media (min-width:768px) {
     .sociales {
         width: auto;
     }
-    
+
     footer .contenedor {
         justify-content: space-between;
     }
@@ -93,16 +110,46 @@ footer .contenedor {
         width: 1000px;
     }
 }
+#presentadores{
+  background-color: white
+}
 
+#presentadores h3, h4 {
+    margin-top: 10px;
+    color: #212121;
+    text-align: center;
+}
+
+#presentadores .contenedor{
+  text-align: center;
+  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#presentadores article {
+
+    margin: 15px;
+}
+
+#presentadores img {
+    width: 100%;
+    max-width: 300px;
+}
+#blog{
+  background-color: #ffd600
+}
 
 #blog h3, h4 {
+    margin-top: 10px;
+    color: #212121;
     text-align: center;
 }
 
 #blog .contenedor{
+  text-align: center;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 #blog article {
@@ -111,12 +158,16 @@ footer .contenedor {
 
 #blog img {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
 }
 #banner {
     margin-top: 50px;
     position: relative;
     text-align: center;
+}
+
+#banner p{
+  font-size: 30px;
 }
 
 #banner img {
@@ -130,7 +181,7 @@ footer .contenedor {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #fff;
-    
+
 }
 
 
@@ -149,27 +200,27 @@ footer .contenedor {
 
 @media (min-width:480px) {
     #banner h2 {
-        font-size: 40px;
+        font-size: 70px;
     }
-    
+
     #banner a {
         margin-top: 25px;
     }
 }
 
-@media (min-width:768px) { 
+@media (min-width:768px) {
     #banner {
-        height: 300px;
+        height: 420px;
         overflow: hidden;
     }
-    
+
     #banner img {
         height: auto;
         margin-top: -100px;
     }
 }
 
-@media (min-width:1024px) { 
+@media (min-width:1024px) {
     #banner img {
         margin-top: -200px;
     }
@@ -184,7 +235,6 @@ footer .contenedor {
 
 #tema .contenedor {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -219,6 +269,20 @@ header label {
     font-size: 28px;
     margin: 6px 0;
     cursor: pointer;
+}
+.botonperro button{
+  cursor:pointer;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: yellow; /* Green */
+  border: none;
+  color: #212121;
+  padding: 25px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  border-radius: 13px;
 }
 
 .menu {
@@ -258,12 +322,12 @@ header label {
         float: right;
         display: flex;
     }
-    
+
     .menu a {
         border: none;
     }
-    
-    header label { 
+
+    header label {
         display: none;
     }
 }
@@ -271,17 +335,21 @@ header label {
 .circularimg{
     border-radius: 50%;
 }
-
+/*
 .circular--portrait {
   position: relative;
   width: 200px;
   height: 200px;
   overflow: hidden;
   border-radius: 50%;
-}
+}*/
 
 .circular--portrait img {
-  width: 100%;
-  height: auto;
+
+  position: relative;
+  width: 300px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 20%;
 }
 /*stickers*/
